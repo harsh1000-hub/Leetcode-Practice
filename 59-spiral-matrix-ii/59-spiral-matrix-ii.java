@@ -6,35 +6,23 @@ class Solution {
         int square=(int)Math.pow(n,2);
         while(count<=square){
             //top
-            if(count<=square){
                 for(int i=minrow,j=mincol;j<=maxcol;j++){
-                nums[i][j]=count;
-                count++;
-            }
+                nums[i][j]=count++;
         }
             minrow++;
             //right
-            if(count<=square){
-                 for(int i=minrow,j=maxcol;i<=maxrow;i++){
-                nums[i][j]=count;
-                count++;
-            }
+                for(int i=minrow,j=maxcol;i<=maxrow;i++){
+                nums[i][j]=count++;
         }
             maxcol--;
             //bottom
-            if(count<=square){
-                 for(int i=maxrow,j=maxcol;j>=mincol;j--){
-                nums[i][j]=count;
-                count++;
-            }
+                for(int i=maxrow,j=maxcol;j>=mincol;j--){
+                nums[i][j]=count++;
           }
             maxrow--;
             //left
-            if(count<=square){
                  for(int i=maxrow,j=mincol;i>=minrow;i--){
-                nums[i][j]=count;
-                count++;
-            }
+                nums[i][j]=count++;
         }
             mincol++;
         }
