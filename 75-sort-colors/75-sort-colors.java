@@ -5,7 +5,7 @@ class Solution {
         arr[j]=temp;
     }
     public void sortColors(int[] nums) {
-        // we use partition there of qucik sort algorithm
+        // we use partition there of quick sort algorithm
         int i=0,j=0,k=nums.length-1;
         while(i<=k){
             if(nums[i]==0){
