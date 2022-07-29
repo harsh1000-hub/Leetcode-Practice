@@ -1,5 +1,6 @@
 class Solution {
     public int findMin(int[] nums) {
+        // Two traversal approach 2*O(n) == O(n)
        int max=Integer.MIN_VALUE;
         for(int val:nums){
             max=Math.max(max,val);
