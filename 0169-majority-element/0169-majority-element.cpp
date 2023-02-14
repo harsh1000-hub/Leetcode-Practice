@@ -1,9 +1,9 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        if(nums.size()==0){
-            return nums[0];
-        }
+        // if(nums.size()==0){
+        //     return nums[0];
+        // }
         int check_agent=nums.size()/2;
         int result=0;
         for(int i=0;i<nums.size();i++){
