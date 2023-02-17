@@ -33,7 +33,7 @@ public:
             else if(mid==nums.size()-1){
                 if(nums[nums.size()-1]>nums[nums.size()-2]){
                     temp=nums.size()-1;
-                    break;
+                   break;
                 }
                 else{
                     temp=nums.size()-2;
